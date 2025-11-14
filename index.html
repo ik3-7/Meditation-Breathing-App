@@ -1,0 +1,73 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meditation Breathing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" role="main">
+    <header>
+       <h1>Meditation Breathing App</h1>
+      <p class="tagline">Follow the circle: Inhale • Hold • Exhale</p>
+    </header>
+
+    <section class="stage" aria-live="polite">
+      <div class="ring-wrap">
+        <div id="ring" class="ring" aria-hidden="true"></div>
+        <div class="center">
+          <div id="phase" class="phase">Ready</div>
+          <div id="countdown" class="countdown">00</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="controls" aria-label="controls">
+      <div class="buttons">
+        <button id="startBtn" class="btn primary">Start</button>
+        <button id="pauseBtn" class="btn" disabled>Pause</button>
+        <button id="resetBtn" class="btn" disabled>Reset</button>
+      </div>
+
+      <div class="settings" aria-label="Settings">
+        <div class="setting">
+          <label for="inhale">Inhale (s)</label>
+          <input id="inhale" type="range" min="2" max="8" value="4">
+          <output id="inhaleVal">4</output>
+        </div>
+        <div class="setting">
+          <label for="hold">Hold (s)</label>
+          <input id="hold" type="range" min="0" max="6" value="2">
+          <output id="holdVal">2</output>
+        </div>
+        <div class="setting">
+          <label for="exhale">Exhale (s)</label>
+          <input id="exhale" type="range" min="2" max="8" value="4">
+          <output id="exhaleVal">6</output>
+        </div>
+        <div class="setting small">
+          <label for="cycles">Cycles</label>
+          <input id="cycles" type="number" min="1" max="20" value="3">
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      
+
+      <i> © 2025. All Right Reserved </i>
+
+      
+      <div class="credits">Meditation Breathing App - by - <i>Ike Cletus</i></div>
+    </footer>
+
+
+  </main> 
+
+  <script src="script.js"></script>
+</body>
+</html>
